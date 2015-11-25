@@ -4,14 +4,14 @@ module.exports = {
   entry: {
     app:['webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    './src/index.js'],
-    vendors: ['react','react-dom','react-router','history/lib/createBrowserHistory']
+    './app/index.js'],
+    vendors: ['react','react-dom','react-router','history/lib/createBrowserHistory','material-ui']
   },
   module: {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      include:/src/,
+      include:/app/,
       loader: 'react-hot!babel?presets[]=react,presets[]=es2015'
     }],
   },
