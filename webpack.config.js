@@ -4,7 +4,7 @@ module.exports = {
   entry: {
     app:['webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    './app/index.js'],
+    './app/index.jsx'],
     vendors: ['react','react-dom','react-router','history/lib/createBrowserHistory','material-ui']
   },
   module: {
