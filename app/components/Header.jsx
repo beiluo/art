@@ -6,6 +6,11 @@ import FontIcon from 'material-ui/lib/font-icon'
 import ListItem from 'material-ui/lib/lists/list-item';
 import Avatar from 'material-ui/lib/avatar';
 import NavigationMenu from 'material-ui/lib/svg-icons//navigation/menu'
+import '../css/header.css'
+
+let menuStyle = {
+	padding:"20px 16px 20px 40px"
+}
 class Header extends React.Component {
 	render(){
 		return (
@@ -17,8 +22,12 @@ class Header extends React.Component {
 					</Link>
 				</div>
 				<div className="top-nav">
-						<ListItem leftIcon={<NavigationMenu />} />
-						<ListItem leftAvatar={<Avatar src="images/g1.jpg" />} primaryText="LISA" />
+					<div className='nav-left'>
+						<ListItem leftAvatar={<NavigationMenu />} style={menuStyle}/>
+					</div>
+					<div className="nav-right">
+						<ListItem leftAvatar={<Avatar src="images/g1.jpg" />} primaryText="超级管理员" />
+					</div>
 				</div>
 			</header>
 		)

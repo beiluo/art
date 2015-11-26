@@ -9,11 +9,14 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      include:/app/,
-      loader: 'react-hot!babel?presets[]=react,presets[]=es2015'
-    }],
+	      test: /\.jsx?$/,
+	      exclude: /node_modules/,
+	      include:/app/,
+	      loader: 'react-hot!babel?presets[]=react,presets[]=es2015'
+	    },
+	    { test: /\.css$/, loader: 'style-loader!css-loader' },
+	    {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
+    ],
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
@@ -29,7 +32,6 @@ module.exports = {
   },
   plugins: [
   	new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
-    // new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ]
 };

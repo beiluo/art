@@ -1,0 +1,54 @@
+.header-container{
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1030;
+  box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.logo{
+  display: inline-block;
+  width: 220px;
+  height: 64px;
+  line-height: 64px;
+  position: absolute;
+  text-align: center;
+  transition: width 0.25s ease-in-out 0s;
+
+}
+
+.header-container .logo > a {
+	color: #fafafa;
+  font-size: 24px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.bg-dark{
+	background-color: #262b33;
+  color: #fff;
+}
+
+.header-container .top-nav {
+  padding: 0 0 0 220px;
+  height: 64px;
+  transition: padding 0.25s ease-in-out 0s;
+}
+.header-container .top-nav .nav-left {
+  float: left;
+}
+.header-container .top-nav .nav-right {
+	float: right;
+}
+.header-container .top-nav .nav-left, .header-container .top-nav .nav-right {
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+.header-container .top-nav .nav-left a{
+  padding: 12px 0 12px 10px;
+}
+
+.header-container .top-nav .nav-right a{
+	padding: 4px 0;
+}
