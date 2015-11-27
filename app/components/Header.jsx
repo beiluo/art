@@ -26,7 +26,7 @@ class Header extends React.Component {
 						<ListItem leftAvatar={<NavigationMenu />} style={menuStyle}/>
 					</div>
 					<div className="nav-right">
-						<ListItem leftAvatar={<Avatar src="images/g1.jpg" />} primaryText="超级管理员" />
+						<ListItem leftAvatar={<Avatar src={require("../images/g1.jpg")} />} primaryText="超级管理员" />
 					</div>
 				</div>
 			</header>
