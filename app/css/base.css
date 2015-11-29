@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+body {
+	font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857;
+	color: #3D4051;
+	background-color: #f3f3f3;
+}
+.md-button{
+	margin: 0;
+	line-height: 1.42857;
+	letter-spacing: .01em;
+	text-align: center;
+	min-width: 66px;
+	text-transform: uppercase;
+	transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0 none;
+}

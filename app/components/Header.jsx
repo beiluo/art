@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Link } from 'react-router';
-import FlatButton from 'material-ui/lib/flat-button'
-import FontIcon from 'material-ui/lib/font-icon'
-import ListItem from 'material-ui/lib/lists/list-item';
-import Avatar from 'material-ui/lib/avatar';
-import NavigationMenu from 'material-ui/lib/svg-icons//navigation/menu'
 import '../css/header.css'
+import '../css/material-design-iconic-font.min.css'
 
 class Header extends React.Component {
 	render(){
@@ -14,16 +10,23 @@ class Header extends React.Component {
 			<header className = 'header-container'>
 				<div className='logo bg-dark'>
 					<Link to="/">
-            <span className="logo-icon zmdi zmdi-view-dashboard"></span>
-            <span className="logo-text ng-binding">Material</span>
+						<span className="logo-icon zmdi zmdi-view-dashboard"></span> 
+						<span className="logo-text ng-binding">Material</span>
 					</Link>
 				</div>
 				<div className="top-nav">
 					<div className='nav-left'>
-						<ListItem leftAvatar={<NavigationMenu />}/>
+						<a className="toggle-min md-button md-ink-ripple">
+							<i className="zmdi zmdi-menu"></i>
+						</a>
 					</div>
 					<div className="nav-right">
-						<ListItem leftAvatar={<Avatar src={require("../images/g1.jpg")} />} primaryText="超级管理员" />
+						<a className="dropdown-toggle md-button md-ink-ripple">
+							<img src={require("../images/g1.jpg")} alt="" className="img-circle img30_30 " />
+							<span className="hidden-xs ">
+								<span className="">Lisa</span>
+							</span>
+						</a>
 					</div>
 				</div>
 			</header>

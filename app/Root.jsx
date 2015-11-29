@@ -9,8 +9,8 @@ import {
 
 import { Route } from 'react-router';
 import { Provider } from 'react-redux';
-import { devTools } from 'redux-devtools';
-import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
+//import { devTools } from 'redux-devtools';
+//import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
 import { createHistory } from 'history';
 
 const reducer = combineReducers({
@@ -18,13 +18,15 @@ const reducer = combineReducers({
 });
 
 const store = compose(
-  reduxReactRouter({ createHistory }),
-  devTools()
+  reduxReactRouter({ createHistory })
+  //devTools()
 )(createStore)(reducer);
 
 import App from './components/App';
 
-
+   /* <DebugPanel top right bottom>
+           <DevTools store={store} monitor={LogMonitor} />
+         </DebugPanel>*/
 class Root extends Component {
   render() {
     return (
@@ -35,9 +37,7 @@ class Root extends Component {
             </Route>
           </ReduxRouter>
         </Provider>
-        <DebugPanel top right bottom>
-          <DevTools store={store} monitor={LogMonitor} />
-        </DebugPanel>
+     
       </div>
     );
   }

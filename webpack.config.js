@@ -5,7 +5,7 @@ module.exports = {
     app:['webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './app/index.jsx'],
-    vendors: ['react','react-dom','react-router','history/lib/createBrowserHistory','material-ui']
+    vendors: ['react','react-dom','react-router','history/lib/createBrowserHistory']
   },
   module: {
     loaders: [{
@@ -15,7 +15,7 @@ module.exports = {
 	      loader: 'react-hot!babel?presets[]=react,presets[]=es2015'
 	    },
 	    { test: /\.css$/, loader: 'style-loader!css-loader' },
-	    {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
+	    {test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=8192'}
     ],
   },
   resolve: {

@@ -1,0 +1,82 @@
+
+.main-container>.nav-container.nav-fixed {
+	position: fixed;
+	top: 64px;
+	bottom: 0;
+	left: 0;
+	float: none;
+}
+.main-container>.nav-container {
+	display: block;
+	z-index: 11;
+	position: static;
+	float: left;
+	width: 220px;
+	transition: width 0.25s ease-in-out;
+}
+.nav-container.bg-dark {
+	background-color: #262B33;
+}
+.nav-vertical {
+	box-shadow: 2px 0 2px 0 rgba(0,0,0,0.12);
+}
+
+.nav-container .nav>li:first-child {
+	margin-top: 15px;
+}
+.nav-container .nav>li {
+	position: relative;
+	margin: 0;
+	text-align: left;
+	font-weight: bold;
+	transition: all 0.25s ease-in-out;
+}
+.nav-container.bg-dark .nav>li.active>a {
+	color: rgba(255,255,255,0.8);
+}
+.nav-container.bg-dark .nav a {
+	color: rgba(255,255,255,0.5);
+}
+.nav-container .nav>li>a {
+	position: relative;
+	white-space: nowrap;
+	display: block;
+	padding: 15px 15px;
+	transition: all 0.25s ease-in-out;
+}
+.nav-container .nav a {
+	font-size: 14px;
+	transition: all 0.25s ease-in-out;
+}
+.nav-container .md-button {
+	text-align: left;
+	min-width: 20px;
+	text-transform: none;
+}
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+.bg-dark a {
+	color: #fff;
+}
+.nav-container ul {
+	padding-left: 0;
+	list-style: none;
+}
+.nav-container .nav {
+	margin: 0;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: -blackberry-touch;
+}
+.nav-container .nav>li>a>i, .nav-container .nav>li>a>.nav-icon {
+	display: inline-block;
+	margin-right: 10px;
+	width: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 16px;
+	transition: all 0.25s ease-in-out;
+}

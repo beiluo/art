@@ -17,7 +17,12 @@
   transition: width 0.25s ease-in-out 0s;
 
 }
-
+.header-container .logo .logo-icon {
+  font-size: 20px;
+}
+.header-container .logo-text{
+  margin-left: 5px;
+}
 .header-container .logo > a {
 	color: #fafafa;
   font-size: 24px;
@@ -40,15 +45,29 @@
 .header-container .top-nav .nav-right {
 	float: right;
 }
-.header-container .top-nav .nav-left, .header-container .top-nav .nav-right {
-  padding: 0;
-  font-size: 16px;
-  line-height: 20px;
+
+.header-container .top-nav .nav-left>a>i{ 
+	font-size: 18px;
 }
-.header-container .top-nav .nav-left a{
-  padding: 12px 0 12px 10px;
+.header-container .top-nav .nav-left>a{ 
+	min-width: 66px;
+}
+.header-container .top-nav .nav-left>a, 
+.header-container .top-nav .nav-right>a {
+  position: relative;
+  display: block;
+  height: 64px;
+  padding: 22px 20px;
 }
 
-.header-container .top-nav .nav-right a{
-	padding: 4px 0;
+.header-container .top-nav .nav-right  a {
+    padding: 17px 15px;
+}
+img.img30_30 {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.img-circle {
+  border-radius: 50%;
 }
