@@ -1,0 +1,12 @@
+.app>.main-container>.content-container {
+	margin-left: 220px;
+}
+.app>.main-container>.content-container {
+	overflow: hidden;
+	min-height: 100%;
+	margin-left: 0;
+	transition: margin-left 0.25s ease-in-out;
+}
+.app.nav-collapsed-min .content-container {
+	margin-left: 60px;
+}

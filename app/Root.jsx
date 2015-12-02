@@ -7,7 +7,7 @@ import {
   reduxReactRouter
 } from 'redux-router';
 
-import { Route } from 'react-router';
+import { Route,IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
 //import { devTools } from 'redux-devtools';
 //import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
@@ -23,6 +23,7 @@ const store = compose(
 )(createStore)(reducer);
 
 import App from './components/App';
+import Home from './components/Home'
 
    /* <DebugPanel top right bottom>
            <DevTools store={store} monitor={LogMonitor} />
@@ -33,7 +34,8 @@ class Root extends Component {
       <div>
         <Provider store={store}>
           <ReduxRouter>
-            <Route path='/' component={App}>
+            <Route component={App}>
+              <Route path='/' component={Home}/>
             </Route>
           </ReduxRouter>
         </Provider>

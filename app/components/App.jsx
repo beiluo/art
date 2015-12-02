@@ -4,6 +4,7 @@ import LeftNav from './LeftNav';
 import '../css/base.css'
 class App extends React.Component {
   render() {
+    console.log("APPP")
     return (
       <div>
         <Header />
