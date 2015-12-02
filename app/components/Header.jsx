@@ -16,7 +16,7 @@ class Header extends React.Component {
 				</div>
 				<div className="top-nav">
 					<div className='nav-left'>
-						<a className="toggle-min md-button md-ink-ripple">
+						<a className="toggle-min md-button md-ink-ripple" onClick={this.props.onClick}>
 							<i className="zmdi zmdi-menu"></i>
 						</a>
 					</div>
