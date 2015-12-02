@@ -7,7 +7,7 @@ import '../css/material-design-iconic-font.min.css'
 class Header extends React.Component {
 	render(){
 		return (
-			<header className = 'header-container'>
+			<header className = 'header-container header-fixed'>
 				<div className='logo bg-dark'>
 					<Link to="/">
 						<span className="logo-icon zmdi zmdi-view-dashboard"></span> 

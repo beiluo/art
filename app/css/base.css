@@ -10,6 +10,8 @@ body {
 	line-height: 1.42857;
 	color: #3D4051;
 	background-color: #f3f3f3;
+	margin: 0;
+	padding: 0;
 }
 .md-button{
 	margin: 0;

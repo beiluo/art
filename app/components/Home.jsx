@@ -7,10 +7,12 @@ import '../css/home.css'
 
 class Home extends React.Component {
 	render(){
-	console.log("there")
-		
 		return (
-			<h1>hello world</h1>
+			<section className="view-container animate-fade-up">
+				<div className="page page-dashboard ng-scope">
+					<h1>hello world!</h1>
+				</div>
+			</section>
 		)
 	}
 }

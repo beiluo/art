@@ -15,7 +15,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("APPP")
     return (
       <div className={this.state.collapsed}>
         <Header onClick={this._setCollapsed.bind(this)}/>

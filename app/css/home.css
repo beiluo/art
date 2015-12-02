@@ -1,12 +1,22 @@
-.app>.main-container>.content-container {
+.main-container>.content-container {
 	margin-left: 220px;
 }
-.app>.main-container>.content-container {
+.main-container>.content-container {
 	overflow: hidden;
 	min-height: 100%;
-	margin-left: 0;
 	transition: margin-left 0.25s ease-in-out;
 }
-.app.nav-collapsed-min .content-container {
+.nav-collapsed-min .content-container {
 	margin-left: 60px;
+}
+.main-container {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 0;
+}
+.header-container.header-fixed+.main-container {
+	padding-top: 64px;
+}
+.page {
+	padding: 15px 30px;
 }
