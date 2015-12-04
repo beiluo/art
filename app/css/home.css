@@ -20,3 +20,37 @@
 .page {
 	padding: 15px 30px;
 }
+.ct-chart{
+	height: 100%;
+	width: 100%;
+}
+.page-dashboard .box-stats {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.page-dashboard .box-stats .box-desc {
+	font-size: 12px;
+	line-height: 26px;
+	color: #A5AEB1;
+	text-transform: uppercase;
+}
+.page-dashboard .box-stats.no-border .box-num {
+	border: 0;
+}
+
+.page-dashboard .box-stats .box-num {
+	border-right: 2px solid #EDF0F1;
+}
+.page-dashboard .box-stats .box-num {
+	font-size: 42px;
+	line-height: 80px;
+	font-weight: 300;
+}
+.no-border {
+	border: 0;
+}
+.divider-xl {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
